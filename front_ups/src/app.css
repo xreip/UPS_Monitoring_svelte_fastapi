@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--font-body: Ubuntu, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-family: var(--font-body);
+}
+
+body {
+	/* min-height: 100vh; */
+	color: #ffffff;
+	background-color: #232323;
+}
