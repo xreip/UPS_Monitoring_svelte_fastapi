@@ -37,10 +37,10 @@
 </script>
 
 <div
-	class="bg-gray_blue rounded-2xl py-8 px-6 border border-p_gray_350 shadow-md min-h-[480px] flex flex-col justify-center items-center"
+	class="bg-gray_blue border-p_gray_350 flex min-h-[480px] flex-col items-center justify-center rounded-2xl border py-8 px-6 shadow-md"
 >
-	<div class="text-t_gray_light font-bold text-xl text-center">{ups.name}</div>
-	<div class="text-t_gray_med font-semibold text-lg text-center">{ups.model}</div>
+	<div class="text-t_gray_light text-center text-xl font-bold">{ups.name}</div>
+	<div class="text-t_gray_med text-center text-lg font-semibold">{ups.model}</div>
 	<div class="flex flex-col items-center p-4">
 		<!-- <svelte:component
 			this={definedUps.icon}
@@ -83,7 +83,7 @@
 		</div>
 	</div>
 	<div
-		class="text-center text-t_gray_light font-bold text-lg my-1 flex items-center gap-4 justify-between w-full"
+		class="text-t_gray_light my-1 flex w-full items-center justify-between gap-4 text-center text-lg font-bold"
 	>
 		<div class="text-t_gray_med flex items-center gap-4">
 			<BatteryIcon height="30" width="30" class="hover:text-t_gray_light" /><span
@@ -93,7 +93,7 @@
 		<span class={ups.batt_charge < 50 ? 'text-alert_red' : ''}>{ups.batt_charge} %</span>
 	</div>
 	<div
-		class="text-center text-t_gray_light font-bold text-lg my-1 flex items-center gap-4 justify-between w-full"
+		class="text-t_gray_light my-1 flex w-full items-center justify-between gap-4 text-center text-lg font-bold"
 	>
 		<div class="text-t_gray_med flex items-center gap-4">
 			<LoadIcon height="30" width="30" class="hover:text-t_gray_light" /><span>Load</span>
@@ -101,7 +101,7 @@
 		<span>{ups.load} %</span>
 	</div>
 	<div
-		class="text-center text-t_gray_light font-bold text-lg my-1 flex items-center justify-between w-full"
+		class="text-t_gray_light my-1 flex w-full items-center justify-between text-center text-lg font-bold"
 	>
 		<div class="text-t_gray_med flex items-center gap-4">
 			<VoltIcon height="30" width="30" class="hover:text-t_gray_light" /><span>Voltage</span>

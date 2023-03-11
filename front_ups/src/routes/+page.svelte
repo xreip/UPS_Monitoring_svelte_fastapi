@@ -12,14 +12,14 @@
 </svelte:head>
 
 <main class="container mx-auto">
-	<section class="grid gap-4 md:grid-cols-2 2xl:grid-cols-4 3xl:grid-flow-col my-20 px-2">
+	<section class="3xl:grid-flow-col my-20 grid gap-4 px-2 md:grid-cols-2 2xl:grid-cols-4">
 		<!-- {#each upsnotlazy as ups}
 			<UpsComp {ups} />
 		{/each} -->
 
 		{#await ups}
-			<section class="flex items-center justify-center col-span-4 min-h-[50vh]">
-				<p class="text-3xl text-t_gray_med font-bold">Loading data...</p>
+			<section class="col-span-4 flex min-h-[50vh] items-center justify-center">
+				<p class="text-t_gray_med text-3xl font-bold">Loading data...</p>
 			</section>
 		{:then dataups}
 			{#each dataups as ups}
