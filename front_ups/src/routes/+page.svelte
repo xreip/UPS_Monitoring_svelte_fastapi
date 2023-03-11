@@ -3,7 +3,7 @@
 
 	export let data;
 	const { ups } = data.lazy;
-	const { upsnotlazy } = data;
+	// const { upsnotlazy } = data;
 </script>
 
 <svelte:head>
@@ -18,7 +18,7 @@
 		{/each} -->
 
 		{#await ups}
-			<section class="flex items-center justify-center">
+			<section class="flex items-center justify-center col-span-4 min-h-[50vh]">
 				<p class="text-3xl text-t_gray_med font-bold">Loading data...</p>
 			</section>
 		{:then dataups}

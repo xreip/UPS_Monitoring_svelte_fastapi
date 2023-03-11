@@ -8,7 +8,7 @@ export const load = async ({ fetch }) => {
 	// return { upsData };
 	// return { ups: upsData };
 	return {
-		upsnotlazy: fetchUps(),
+		// upsnotlazy: fetchUps(),
 		lazy: { ups: fetchUps() }
 	};
 };
