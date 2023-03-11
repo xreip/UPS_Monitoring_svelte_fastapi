@@ -4,6 +4,7 @@
 	export let data;
 	const { ups } = data.lazy;
 	// const { upsnotlazy } = data;
+
 </script>
 
 <svelte:head>
