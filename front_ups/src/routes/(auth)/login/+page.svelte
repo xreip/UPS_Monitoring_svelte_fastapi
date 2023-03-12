@@ -2,6 +2,7 @@
 	// Svelte
 	import { fly, fade } from 'svelte/transition';
 	import { goto } from '$app/navigation';
+	import { user } from '../../stores';
 
 	let codes = ['', '', '', '', '', ''];
 	let refs = [];
@@ -39,6 +40,7 @@
 				if (!res.ok) {
 					throw new Error(`Fetch error: ${res}`);
 				}
+				$user = true;
 				goto('/');
 			} catch (error) {
 				console.log(error);
